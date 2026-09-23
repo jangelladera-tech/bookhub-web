@@ -1,0 +1,199 @@
+/* ==========================================================================
+   BOOKHUB - ESTILOS PERSONALIZADOS (HTML5 - CSS3 - BOOTSTRAP 5)
+   ========================================================================== */
+
+:root {
+    --bh-primary: #1e3a8a;       /* Deep Indigo / Blue */
+    --bh-primary-dark: #172554;
+    --bh-secondary: #0d9488;     /* Teal */
+    --bh-accent: #f59e0b;        /* Amber */
+    --bh-bg-light: #f8fafc;
+    --bh-card-bg: #ffffff;
+    --bh-text-main: #1e293b;
+    --bh-text-muted: #64748b;
+    --bh-border: #e2e8f0;
+}
+
+body {
+    background-color: var(--bh-bg-light);
+    color: var(--bh-text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* ----------------- NAVBAR ----------------- */
+.navbar-bookhub {
+    background: linear-gradient(135deg, var(--bh-primary-dark) 0%, var(--bh-primary) 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--bh-accent) !important;
+}
+
+/* ----------------- TARJETAS Y HERO ----------------- */
+.hero-banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.15);
+}
+
+.book-card {
+    border: none;
+    border-radius: 0.85rem;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.book-card-img-wrapper {
+    height: 220px;
+    background-color: #e2e8f0;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.badge-stock {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.badge-stock.available {
+    background-color: rgba(16, 185, 129, 0.95);
+    color: #ffffff;
+}
+
+.badge-stock.unavailable {
+    background-color: rgba(239, 68, 68, 0.95);
+    color: #ffffff;
+}
+
+/* ----------------- ADMIN DASHBOARD & TABLAS ----------------- */
+.stat-card {
+    border-radius: 1rem;
+    border: none;
+    padding: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-right: 1.25rem;
+}
+
+.stat-icon.books { background-color: #e0e7ff; color: #4338ca; }
+.stat-icon.loans { background-color: #fef3c7; color: #d97706; }
+.stat-icon.users { background-color: #d1fae5; color: #059669; }
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.table-custom thead th {
+    border: none;
+    color: var(--bh-text-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.75rem 1rem;
+}
+
+.table-custom tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+.table-custom tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: none;
+}
+
+.table-custom tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.table-custom tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* ----------------- FOOTER ----------------- */
+.footer-bookhub {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-bookhub a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-bookhub a:hover {
+    color: #ffffff;
+}

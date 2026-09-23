@@ -1,0 +1,19 @@
+# Compiled Java & Maven
+target/
+*.class
+
+# IDEs & Editors
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+.vscode/
+
+# Node dependencies
+node_modules/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
