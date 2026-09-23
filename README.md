@@ -84,16 +84,17 @@ t1/
 
 ## 🚀 Pasos para Ejecutar el Proyecto
 
-### 1. Configurar la Base de Datos (MySQL)
-1. Iniciar el servidor MySQL (mediante XAMPP, WampServer o MySQL Workbench).
-2. Ejecutar el script [database.sql](file:///C:/Users/CARITO/Desktop/t1/database.sql).
-3. Verificar la configuración de conexión en [`ConexionBD.java`](file:///C:/Users/CARITO/Desktop/t1/src/main/java/com/bookhub/dao/ConexionBD.java#L11-L15) (usuario `root`, sin contraseña por defecto o con la clave local de tu equipo).
+### ⚡ Opción Rápida (1 Clic - Para tu compañero de equipo):
+1. Si pasas la carpeta o clonan el repositorio, tu compañero solo debe hacer **doble clic en `INICIAR_PROYECTO.bat`** (o ejecutar `node server.js`).
+2. Se abrirá automáticamente en su navegador en: **http://localhost:8080/**
+3. Revisa todos los detalles y credenciales en [GUIA_RAPIDA_COMPANERO.md](file:///C:/Users/CARITO/Desktop/t1/GUIA_RAPIDA_COMPANERO.md).
 
-### 2. Abrir y Ejecutar en NetBeans / Eclipse / IntelliJ
-* **NetBeans / Eclipse / IntelliJ:** `File` > `Open Project` > Seleccionar la carpeta `t1` (reconocida automáticamente como proyecto Maven).
-* **Servidor Web:** Configurar **Apache Tomcat 9 / 10** o **GlassFish**.
-* **Ejecutar:** Presionar `Run` o hacer clic derecho en el proyecto > `Run as Web Application`.
-* **URL en Navegador:** `http://localhost:8080/bookhub/` (o el puerto configurado en Tomcat).
+---
+
+### ☕ Opción Estándar (Java Web en NetBeans / Eclipse / Tomcat):
+1. **Base de Datos:** Importa el archivo [database.sql](file:///C:/Users/CARITO/Desktop/t1/database.sql) en MySQL.
+2. **Abrir Proyecto:** Abre la carpeta `t1` en NetBeans / Eclipse / IntelliJ como proyecto Maven.
+3. **Servidor:** Despliega en Apache Tomcat y abre `http://localhost:8080/bookhub/`.
 
 ---
 
