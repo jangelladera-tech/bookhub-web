@@ -17,7 +17,11 @@ public class ConexionBD {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            System.err.println("Error al cargar Driver MySQL JDBC: " + e.getMessage());
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+            } catch (ClassNotFoundException ex) {
+                System.err.println("Driver MySQL JDBC no encontrado: " + ex.getMessage());
+            }
         }
     }
 
